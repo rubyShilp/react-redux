@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES6",//编译成ES5
+    "module": "commonjs",//模块加载器
+    "moduleResolution": "node", //模块解析方式
+    "sourceMap": true, //把 ts 文件编译成 js 文件的时候，同时生成对应的 map 文件
+    "emitDecoratorMetadata": true,//启用编译器
+    "experimentalDecorators": true,//编译器选项
+    "removeComments": false, //编译 js 的时候，删除掉注释
+    "noImplicitAny": true,  //不需要隐含任何插件信息
+    "strictNullChecks":true,
+    "jsx": "react",
+    "suppressImplicitAnyIndexErrors": true, //编译出错后生成错误信息
+    "typeRoots": [ "./node_modules/@types" ] //typings分析文件
+  },
+  "lib": [  //编译过程中需要引入的库文件的列表
+    "ES6"
+  ],
+  "exclude": [
+    "node_modules/**"
+  ]
+}
